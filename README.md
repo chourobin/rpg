@@ -10,16 +10,25 @@ Static Library for an RPG demo
 
 <pre>
 # Authenticate with the webservice backend residing at http://rpgexampleapp.herokuapp.com
--(void)signUpWithEmail:(NSString *)email password:(NSString *)password completion:(RPGKeyBlock)block;
--(void)signInWithEmail:(NSString *)email password:(NSString *)password completion:(RPGKeyBlock)block;
+[[RPG sharedClient] signUpWithEmail:email password:password completion:^(NSString *apiKey, NSError *error) {
+	#save api key to keychain
+}];
 
+# set key and context when rebooting app and the user is already signed in
+[RPG sharedClientWithKey:key managedObjectContext:context];
 
 # Create, update, and delete your characters
--(void)getCharacters:(RPGCompletionBlock)block;
--(void)getCharacterWithID:(NSNumber *)identifier completion:(RPGCharacterBlock)block;
--(void)postCharacter:(Character *)character completion:(RPGCharacterBlock)block;
--(void)putCharacter:(Character *)character completion:(RPGCharacterBlock)block;
--(void)deleteCharacter:(Character *)character completion:(RPGCharacterBlock)block;
+[[RPG sharedClient] getCharacters:^(NSArray *characters, NSError *error) {
+}];
+
+[[RPG sharedClient] postCharacter:nil completion:^(Character *character, NSError *error) {
+}];
+
+[[RPG sharedClient] putCharacter:nil completion:^(Character *character, NSError *error) {
+}];
+
+[[RPG sharedClient] deleteCharacter:nil completion:^(Character *character, NSError *error) {
+}];
 
 # Generate a random monster to fight!
 -(void)createRandomMonster:(RPGMonsterBlock)block;
