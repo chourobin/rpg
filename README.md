@@ -8,16 +8,19 @@ Static Library for an RPG demo
 
 # Usage
 
-<pre>
-# Authenticate with the webservice backend residing at http://rpgexampleapp.herokuapp.com
+### Authenticate with the webservice backend residing at http://rpgexampleapp.herokuapp.com
+
+```objective-c
 [[RPG sharedClient] signUpWithEmail:email password:password completion:^(NSString *apiKey, NSError *error) {
 	#save api key to keychain
 }];
-
-# set key and context when rebooting app and the user is already signed in
+```
+### set key and context when rebooting app and the user is already signed in
+```objective-c
 [RPG sharedClientWithKey:key managedObjectContext:context];
-
-# Create, update, and delete your characters
+```
+### Create, update, and delete your characters
+```objective-c
 [[RPG sharedClient] getCharacters:^(NSArray *characters, NSError *error) {
 }];
 
@@ -29,7 +32,9 @@ Static Library for an RPG demo
 
 [[RPG sharedClient] deleteCharacter:nil completion:^(Character *character, NSError *error) {
 }];
+```
 
-# Generate a random monster to fight!
+### Generate a random monster to fight!
+```objective-c
 -(void)createRandomMonster:(RPGMonsterBlock)block;
-</pre>
+```
