@@ -12,7 +12,7 @@ Static Library for an RPG demo
 
 ```objective-c
 [[RPG sharedClient] signUpWithEmail:email password:password completion:^(NSString *apiKey, NSError *error) {
-	#save api key to keychain
+	//save api key to keychain
 }];
 ```
 ### set key and context when rebooting app and the user is already signed in
