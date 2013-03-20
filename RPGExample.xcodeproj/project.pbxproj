@@ -18,19 +18,26 @@
 		D0E5F72116F8D616008D7B0C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E5F72016F8D616008D7B0C /* Default@2x.png */; };
 		D0E5F72316F8D616008D7B0C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0E5F72216F8D616008D7B0C /* Default-568h@2x.png */; };
 		D0E5F72616F8D616008D7B0C /* RPGExample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F72416F8D616008D7B0C /* RPGExample.xcdatamodeld */; };
-		D0E5F73116F8D627008D7B0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5F70C16F8D616008D7B0C /* Foundation.framework */; };
-		D0E5F73616F8D627008D7B0C /* RPGClient.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0E5F73516F8D627008D7B0C /* RPGClient.h */; };
-		D0E5F73816F8D627008D7B0C /* RPGClient.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F73716F8D627008D7B0C /* RPGClient.m */; };
+		D0E5F74716F8DD0D008D7B0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5F70C16F8D616008D7B0C /* Foundation.framework */; };
+		D0E5F74C16F8DD0D008D7B0C /* RPG.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0E5F74B16F8DD0D008D7B0C /* RPG.h */; };
+		D0E5F74E16F8DD0D008D7B0C /* RPG.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F74D16F8DD0D008D7B0C /* RPG.m */; };
+		D0E5F75F16F8E61E008D7B0C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E5F75E16F8E61E008D7B0C /* Storyboard.storyboard */; };
+		D0E5F76216F8EB92008D7B0C /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F76116F8EB92008D7B0C /* SignUpViewController.m */; };
+		D0E5F76316F8EC44008D7B0C /* libRPG.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5F74616F8DD0D008D7B0C /* libRPG.a */; };
+		D0E5F76916F90F36008D7B0C /* SignInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F76816F90F36008D7B0C /* SignInViewController.m */; };
+		D0E5F76C16F91175008D7B0C /* CharactersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F76B16F91175008D7B0C /* CharactersViewController.m */; };
+		D0E5F76F16F94A3D008D7B0C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E5F76E16F94A3D008D7B0C /* DetailViewController.m */; };
+		D0E5F77016F9578B008D7B0C /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E5F71016F8D616008D7B0C /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		D0E5F72E16F8D627008D7B0C /* CopyFiles */ = {
+		D0E5F74416F8DD0D008D7B0C /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
-				D0E5F73616F8D627008D7B0C /* RPGClient.h in CopyFiles */,
+				D0E5F74C16F8DD0D008D7B0C /* RPG.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,10 +59,20 @@
 		D0E5F72016F8D616008D7B0C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		D0E5F72216F8D616008D7B0C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D0E5F72516F8D616008D7B0C /* RPGExample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RPGExample.xcdatamodel; sourceTree = "<group>"; };
-		D0E5F73016F8D627008D7B0C /* libRPGClient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRPGClient.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0E5F73416F8D627008D7B0C /* RPGClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPGClient-Prefix.pch"; sourceTree = "<group>"; };
-		D0E5F73516F8D627008D7B0C /* RPGClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPGClient.h; sourceTree = "<group>"; };
-		D0E5F73716F8D627008D7B0C /* RPGClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPGClient.m; sourceTree = "<group>"; };
+		D0E5F74616F8DD0D008D7B0C /* libRPG.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRPG.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D0E5F74A16F8DD0D008D7B0C /* RPG-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RPG-Prefix.pch"; sourceTree = "<group>"; };
+		D0E5F74B16F8DD0D008D7B0C /* RPG.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RPG.h; sourceTree = "<group>"; };
+		D0E5F74D16F8DD0D008D7B0C /* RPG.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RPG.m; sourceTree = "<group>"; };
+		D0E5F75E16F8E61E008D7B0C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D0E5F76016F8EB92008D7B0C /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		D0E5F76116F8EB92008D7B0C /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		D0E5F76716F90F36008D7B0C /* SignInViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignInViewController.h; sourceTree = "<group>"; };
+		D0E5F76816F90F36008D7B0C /* SignInViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignInViewController.m; sourceTree = "<group>"; };
+		D0E5F76A16F91175008D7B0C /* CharactersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharactersViewController.h; sourceTree = "<group>"; };
+		D0E5F76B16F91175008D7B0C /* CharactersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharactersViewController.m; sourceTree = "<group>"; };
+		D0E5F76D16F94A3D008D7B0C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		D0E5F76E16F94A3D008D7B0C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		D0E5F77916F95B99008D7B0C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0E5F76316F8EC44008D7B0C /* libRPG.a in Frameworks */,
 				D0E5F70B16F8D616008D7B0C /* UIKit.framework in Frameworks */,
 				D0E5F70D16F8D616008D7B0C /* Foundation.framework in Frameworks */,
 				D0E5F70F16F8D616008D7B0C /* CoreGraphics.framework in Frameworks */,
@@ -70,11 +88,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0E5F72D16F8D627008D7B0C /* Frameworks */ = {
+		D0E5F74316F8DD0D008D7B0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E5F73116F8D627008D7B0C /* Foundation.framework in Frameworks */,
+				D0E5F77016F9578B008D7B0C /* CoreData.framework in Frameworks */,
+				D0E5F74716F8DD0D008D7B0C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				D0E5F71216F8D616008D7B0C /* RPGExample */,
-				D0E5F73216F8D627008D7B0C /* RPGClient */,
+				D0E5F74816F8DD0D008D7B0C /* RPG */,
 				D0E5F70916F8D616008D7B0C /* Frameworks */,
 				D0E5F70816F8D616008D7B0C /* Products */,
 			);
@@ -95,7 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D0E5F70716F8D616008D7B0C /* RPGExample.app */,
-				D0E5F73016F8D627008D7B0C /* libRPGClient.a */,
+				D0E5F74616F8DD0D008D7B0C /* libRPG.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 				D0E5F70C16F8D616008D7B0C /* Foundation.framework */,
 				D0E5F70E16F8D616008D7B0C /* CoreGraphics.framework */,
 				D0E5F71016F8D616008D7B0C /* CoreData.framework */,
+				D0E5F77916F95B99008D7B0C /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -116,6 +136,15 @@
 			children = (
 				D0E5F71B16F8D616008D7B0C /* AppDelegate.h */,
 				D0E5F71C16F8D616008D7B0C /* AppDelegate.m */,
+				D0E5F75E16F8E61E008D7B0C /* Storyboard.storyboard */,
+				D0E5F76016F8EB92008D7B0C /* SignUpViewController.h */,
+				D0E5F76116F8EB92008D7B0C /* SignUpViewController.m */,
+				D0E5F76716F90F36008D7B0C /* SignInViewController.h */,
+				D0E5F76816F90F36008D7B0C /* SignInViewController.m */,
+				D0E5F76A16F91175008D7B0C /* CharactersViewController.h */,
+				D0E5F76B16F91175008D7B0C /* CharactersViewController.m */,
+				D0E5F76D16F94A3D008D7B0C /* DetailViewController.h */,
+				D0E5F76E16F94A3D008D7B0C /* DetailViewController.m */,
 				D0E5F72416F8D616008D7B0C /* RPGExample.xcdatamodeld */,
 				D0E5F71316F8D616008D7B0C /* Supporting Files */,
 			);
@@ -136,20 +165,20 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D0E5F73216F8D627008D7B0C /* RPGClient */ = {
+		D0E5F74816F8DD0D008D7B0C /* RPG */ = {
 			isa = PBXGroup;
 			children = (
-				D0E5F73516F8D627008D7B0C /* RPGClient.h */,
-				D0E5F73716F8D627008D7B0C /* RPGClient.m */,
-				D0E5F73316F8D627008D7B0C /* Supporting Files */,
+				D0E5F74B16F8DD0D008D7B0C /* RPG.h */,
+				D0E5F74D16F8DD0D008D7B0C /* RPG.m */,
+				D0E5F74916F8DD0D008D7B0C /* Supporting Files */,
 			);
-			path = RPGClient;
+			path = RPG;
 			sourceTree = "<group>";
 		};
-		D0E5F73316F8D627008D7B0C /* Supporting Files */ = {
+		D0E5F74916F8DD0D008D7B0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0E5F73416F8D627008D7B0C /* RPGClient-Prefix.pch */,
+				D0E5F74A16F8DD0D008D7B0C /* RPG-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -174,21 +203,21 @@
 			productReference = D0E5F70716F8D616008D7B0C /* RPGExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0E5F72F16F8D627008D7B0C /* RPGClient */ = {
+		D0E5F74516F8DD0D008D7B0C /* RPG */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D0E5F73916F8D627008D7B0C /* Build configuration list for PBXNativeTarget "RPGClient" */;
+			buildConfigurationList = D0E5F75116F8DD0D008D7B0C /* Build configuration list for PBXNativeTarget "RPG" */;
 			buildPhases = (
-				D0E5F72C16F8D627008D7B0C /* Sources */,
-				D0E5F72D16F8D627008D7B0C /* Frameworks */,
-				D0E5F72E16F8D627008D7B0C /* CopyFiles */,
+				D0E5F74216F8DD0D008D7B0C /* Sources */,
+				D0E5F74316F8DD0D008D7B0C /* Frameworks */,
+				D0E5F74416F8DD0D008D7B0C /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RPGClient;
-			productName = RPGClient;
-			productReference = D0E5F73016F8D627008D7B0C /* libRPGClient.a */;
+			name = RPG;
+			productName = RPG;
+			productReference = D0E5F74616F8DD0D008D7B0C /* libRPG.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -213,7 +242,7 @@
 			projectRoot = "";
 			targets = (
 				D0E5F70616F8D616008D7B0C /* RPGExample */,
-				D0E5F72F16F8D627008D7B0C /* RPGClient */,
+				D0E5F74516F8DD0D008D7B0C /* RPG */,
 			);
 		};
 /* End PBXProject section */
@@ -227,6 +256,7 @@
 				D0E5F71F16F8D616008D7B0C /* Default.png in Resources */,
 				D0E5F72116F8D616008D7B0C /* Default@2x.png in Resources */,
 				D0E5F72316F8D616008D7B0C /* Default-568h@2x.png in Resources */,
+				D0E5F75F16F8E61E008D7B0C /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +270,18 @@
 				D0E5F71916F8D616008D7B0C /* main.m in Sources */,
 				D0E5F71D16F8D616008D7B0C /* AppDelegate.m in Sources */,
 				D0E5F72616F8D616008D7B0C /* RPGExample.xcdatamodeld in Sources */,
+				D0E5F76216F8EB92008D7B0C /* SignUpViewController.m in Sources */,
+				D0E5F76916F90F36008D7B0C /* SignInViewController.m in Sources */,
+				D0E5F76C16F91175008D7B0C /* CharactersViewController.m in Sources */,
+				D0E5F76F16F94A3D008D7B0C /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0E5F72C16F8D627008D7B0C /* Sources */ = {
+		D0E5F74216F8DD0D008D7B0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E5F73816F8D627008D7B0C /* RPGClient.m in Sources */,
+				D0E5F74E16F8DD0D008D7B0C /* RPG.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,24 +377,24 @@
 			};
 			name = Release;
 		};
-		D0E5F73A16F8D627008D7B0C /* Debug */ = {
+		D0E5F74F16F8DD0D008D7B0C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/RPGClient.dst;
+				DSTROOT = /tmp/RPG.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RPGClient/RPGClient-Prefix.pch";
+				GCC_PREFIX_HEADER = "RPG/RPG-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		D0E5F73B16F8D627008D7B0C /* Release */ = {
+		D0E5F75016F8DD0D008D7B0C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				DSTROOT = /tmp/RPGClient.dst;
+				DSTROOT = /tmp/RPG.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "RPGClient/RPGClient-Prefix.pch";
+				GCC_PREFIX_HEADER = "RPG/RPG-Prefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -386,12 +420,13 @@
 				D0E5F72B16F8D616008D7B0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D0E5F73916F8D627008D7B0C /* Build configuration list for PBXNativeTarget "RPGClient" */ = {
+		D0E5F75116F8DD0D008D7B0C /* Build configuration list for PBXNativeTarget "RPG" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D0E5F73A16F8D627008D7B0C /* Debug */,
-				D0E5F73B16F8D627008D7B0C /* Release */,
+				D0E5F74F16F8DD0D008D7B0C /* Debug */,
+				D0E5F75016F8DD0D008D7B0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

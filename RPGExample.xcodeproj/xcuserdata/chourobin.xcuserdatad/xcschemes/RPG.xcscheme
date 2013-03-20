@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D0E5F72F16F8D627008D7B0C"
-               BuildableName = "libRPGClient.a"
-               BlueprintName = "RPGClient"
+               BlueprintIdentifier = "D0E5F74516F8DD0D008D7B0C"
+               BuildableName = "libRPG.a"
+               BlueprintName = "RPG"
                ReferencedContainer = "container:RPGExample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

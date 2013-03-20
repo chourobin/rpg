@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RPG.h"
 
 @implementation AppDelegate
 
@@ -16,9 +17,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    [[RPG sharedClient] setManagedObjectContext:self.managedObjectContext];
     [self.window makeKeyAndVisible];
     return YES;
 }
@@ -74,7 +73,6 @@
     if (_managedObjectContext != nil) {
         return _managedObjectContext;
     }
-    
     NSPersistentStoreCoordinator *coordinator = [self persistentStoreCoordinator];
     if (coordinator != nil) {
         _managedObjectContext = [[NSManagedObjectContext alloc] init];
@@ -86,12 +84,11 @@
 // Returns the managed object model for the application.
 // If the model doesn't already exist, it is created from the application's model.
 - (NSManagedObjectModel *)managedObjectModel
-{
-    if (_managedObjectModel != nil) {
-        return _managedObjectModel;
+{    
+    if (!_managedObjectModel)
+    {
+        _managedObjectModel = [NSManagedObjectModel mergedModelFromBundles:nil];
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"RPGExample" withExtension:@"momd"];
-    _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
 

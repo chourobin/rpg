@@ -14,6 +14,34 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0E5F74516F8DD0D008D7B0C"
+               BuildableName = "libRPG.a"
+               BlueprintName = "RPG"
+               ReferencedContainer = "container:RPGExample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D0E5F78C16F95F61008D7B0C"
+               BuildableName = "RPGModels.bundle"
+               BlueprintName = "RPGModels"
+               ReferencedContainer = "container:RPGExample.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "D0E5F70616F8D616008D7B0C"
                BuildableName = "RPGExample.app"
                BlueprintName = "RPGExample"
